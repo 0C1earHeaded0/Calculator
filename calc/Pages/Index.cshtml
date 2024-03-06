@@ -1,0 +1,49 @@
+﻿@page
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+
+<div class="[font-family: play] text-5xl w-[100%] h-[100%] flex">
+
+    <div id="calc" class="m-auto">
+        <table id="calculatorTable" class="mx-auto bg-gradient-to-br from-sky-500 via-sky-300 to-sky-100 table-fixed border-4 rounded-2xl border-separate border-spacing-[15px] w-[500px]">
+            <tr class="mb-[5px]">
+                <td id="result" colspan="4" class="bg-sky-600 text-white border w-10 pt-[40px] pb-[10px] text-right rounded-2xl">*result*</td>
+            </tr>
+            <tr>
+                <td colspan="3" class=""></td>
+                <td class="bg-red-300 border w-10 text-center rounded-2xl transition hover:bg-red-500 ease-linear"><button id="btn--" class="w-[100%]">&#x2190;</button></td>
+            </tr>
+            <tr>
+                <td class="bg-sky-500 border w-10 text-center rounded-2xl transition hover:bg-cyan-400 ease-linear"><button v-on:click="#result" id="btn1" class="w-[100%] p-5">1</button></td>
+                <td class="bg-sky-500 border w-10 text-center rounded-2xl transition hover:bg-cyan-400 ease-linear"><button id="btn2" class=" w-[100%] p-5">2</button></td>
+                <td class="bg-sky-500 border w-10 text-center rounded-2xl transition hover:bg-cyan-400 ease-linear"><button id="btn3" class="w-[100%] p-5">3</button></td>
+                <td class="bg-cyan-500 border w-10 text-center rounded-2xl transition hover:bg-cyan-600 ease-linear"><button id="btn+" class="w-[100%] p-5">+</button></td>
+
+            </tr>
+            <tr>
+                <td class="bg-sky-500 border w-10 text-center rounded-2xl transition hover:bg-cyan-400 ease-linear"><button id="btn4" class="w-[100%] p-5">4</button></td>
+                <td class="bg-sky-500 border w-10 text-center rounded-2xl transition hover:bg-cyan-400 ease-linear"><button id="btn5" class="w-[100%] p-5">5</button></td>
+                <td class="bg-sky-500 border w-10 text-center rounded-2xl transition hover:bg-cyan-400 ease-linear"><button id="btn6" class="w-[100%] p-5">6</button></td>
+                <td class="bg-cyan-500 border w-10 text-center rounded-2xl transition hover:bg-cyan-600 ease-linear"><button id="btn-" class="w-[100%] p-5">-</button></td>
+
+            </tr>
+            <tr>
+                <td class="bg-sky-500 border w-10 text-center rounded-2xl transition hover:bg-cyan-400 ease-linear"><button id="btn7" class="w-[100%] p-5">7</button></td>
+                <td class="bg-sky-500 border w-10 text-center rounded-2xl transition hover:bg-cyan-400 ease-linear"><button id="btn8" class="w-[100%] p-5">8</button></td>
+                <td class="bg-sky-500 border w-10 text-center rounded-2xl transition hover:bg-cyan-400 ease-linear"><button id="btn9" class="w-[100%] p-5">9</button></td>
+                <td class="bg-cyan-500 border w-10 text-center rounded-2xl transition hover:bg-cyan-600 ease-linear"><button id="btn*" class="w-[100%] p-5">*</button></td>
+
+            </tr>
+            <tr>
+                <td class="bg-cyan-500 border w-10 text-center rounded-2xl transition hover:bg-cyan-600 ease-linear"><button id="btn." class="w-[100%] p-5">.</button></td>
+                <td class="bg-sky-500 border w-10 text-center rounded-2xl transition hover:bg-cyan-400 ease-linear"><button id="btn0" class="w-[100%] p-5">0</button></td>
+                <td class="bg-cyan-500 border w-10 text-center rounded-2xl transition hover:bg-cyan-600 ease-linear"><button id="btnAC" class="w-[100%] p-5">AC</button></td>
+                <td class="bg-cyan-500 border w-10 text-center rounded-2xl transition hover:bg-cyan-600 ease-linear"><button id="btn/" class="w-[100%] p-5">/</button></td>
+
+            </tr>
+        </table>
+    </div>
+</div>
